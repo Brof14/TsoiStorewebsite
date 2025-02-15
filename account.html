@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет | Apple Store</title>
+  <meta name="description" content="Личный кабинет: регистрация, история заказов, настройки профиля и предпочтений пользователя.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Apple Store</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="favorites.html">Избранное</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="account">
+    <div class="container">
+      <h1>Личный кабинет</h1>
+      <!-- Форма регистрации/входа -->
+      <div id="auth-section">
+        <form id="auth-form" onsubmit="handleAuth(event)">
+          <h2>Вход / Регистрация</h2>
+          <input type="email" id="auth-email" placeholder="Ваш email" required>
+          <input type="password" id="auth-password" placeholder="Пароль" required>
+          <button type="submit" class="btn btn-primary">Войти / Зарегистрироваться</button>
+        </form>
+      </div>
+      <!-- Профиль пользователя и история заказов (отображается после входа) -->
+      <div id="profile-section" style="display:none;">
+        <h2>Добро пожаловать, <span id="user-email"></span>!</h2>
+        <h3>История заказов</h3>
+        <div id="order-history">
+          <!-- Заказы генерируются динамически -->
+        </div>
+        <button class="btn btn-secondary" onclick="logout()">Выйти</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Apple Store. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

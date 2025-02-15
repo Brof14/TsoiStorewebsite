@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог iPhone</title>
+  <meta name="description" content="Каталог iPhone: модели, цвета, объемы памяти, цены, скидки и рейтинги. Подберите идеальный смартфон для себя.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Подключение FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">Apple Store</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="favorites.html">Избранное</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="help.html">Помощь</a></li>
+          <li><a href="blog.html">Блог</a></li>
+        </ul>
+      </nav>
+      <!-- Поисковая строка -->
+      <div class="search-container">
+        <input type="text" id="catalog-search" placeholder="Поиск товаров..." autocomplete="off">
+        <ul id="catalog-autocomplete" class="autocomplete-items"></ul>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="catalog">
+    <div class="container">
+      <h1>Каталог iPhone</h1>
+      <div class="catalog-content">
+        <!-- Фильтры -->
+        <aside class="filters">
+          <h2>Фильтры</h2>
+          <div class="filter-group">
+            <label for="filter-model">Модель:</label>
+            <select id="filter-model">
+              <option value="">Все модели</option>
+              <option value="iphone13pro">iPhone 13 Pro</option>
+              <option value="iphone14pro">iPhone 14 Pro</option>
+              <option value="iphone14">iPhone 14</option>
+              <option value="iphone15">iPhone 15</option>
+              <option value="iphone15pro">iPhone 15 Pro</option>
+              <option value="iphone16">iPhone 16</option>
+              <option value="iphone16pro">iPhone 16 Pro</option>
+              <option value="iphone16promax">iPhone 16 Pro Max</option>
+              <option value="iphone14promax">iPhone 14 Pro Max</option>
+              <option value="iphone13promax">iPhone 13 Pro Max</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-color">Цвет:</label>
+            <select id="filter-color">
+              <option value="">Все цвета</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Gold">Gold</option>
+              <option value="Silver">Silver</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-memory">Объем памяти:</label>
+            <select id="filter-memory">
+              <option value="">Все объемы</option>
+              <option value="64">64GB</option>
+              <option value="128">128GB</option>
+              <option value="256">256GB</option>
+              <option value="512">512GB</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-price">Цена:</label>
+            <select id="filter-price">
+              <option value="asc">По возрастанию</option>
+              <option value="desc">По убыванию</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>
+              <input type="checkbox" id="filter-discount">
+              Только со скидкой
+            </label>
+          </div>
+          <div class="filter-group">
+            <label>
+              <input type="checkbox" id="filter-popular">
+              Популярные товары
+            </label>
+          </div>
+          <button class="btn btn-secondary" onclick="applyCatalogFilters()">Применить</button>
+        </aside>
+
+        <div class="product-list" id="catalog-products">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Apple Store. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

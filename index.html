@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Store – iPhone 16 Pro</title>
+  <meta name="description" content="Купить новый iPhone 16 Pro в Apple Store. Передовые технологии, высокое качество сборки и эксклюзивные акции.">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="container header-container">
+
+      <a href="TsoiStore.jpg" class="logo" aria-label="TsoiStore">
+        TsoiStore
+      </a>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="favorites.html">Избранное</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="help.html">Помощь</a></li>
+          <li><a href="blog.html">Блог</a></li>
+        </ul>
+      </nav>
+      <!-- Строка поиска с автоподстановкой -->
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Поиск товаров..." autocomplete="off">
+        <ul id="autocomplete-list" class="autocomplete-items"></ul>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero" role="banner">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Новый iPhone 16 Pro</h1>
+        <p>Откройте для себя непревзойдённое качество, инновационный дизайн и передовые технологии.</p>
+
+        <a href="product.html?id=7" class="btn btn-primary">Купить</a>
+
+        <div id="countdown" class="countdown"></div>
+      </div>
+      <div class="hero-image">
+
+        <img src="https://avatars.mds.yandex.net/get-goods_pic/14781094/hatd3633e2b437491a76b768c7d711be9db/600x600" alt="iPhone 16 Pro" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="carousel-section">
+    <div class="container">
+      <div class="carousel" aria-roledescription="carousel">
+        <
+        <div class="carousel-slide active">
+          <img src="https://" alt="Скидка 10% на аксессуары" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Скидка 10% на аксессуары</h3>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/promo2.jpg" alt="Новые поступления аксессуаров" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Новые поступления аксессуаров</h3>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://" alt="Специальное предложение на AirPods" loading="lazy">
+          <div class="carousel-caption">
+            <h3>Специальное предложение на AirPods</h3>
+          </div>
+        </div>
+        
+        <button class="carousel-control prev" aria-label="Предыдущий слайд" onclick="prevSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control next" aria-label="Следующий слайд" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блоки товаров (новинки, скидки, популярные) -->
+  <section class="product-sections">
+    <div class="container">
+      <div class="section" id="new-arrivals">
+        <h2>Новинки</h2>
+        <div class="product-grid" id="new-products">
+          
+        </div>
+      </div>
+      <div class="section" id="discounts">
+        <h2>Скидки</h2>
+        <div class="product-grid" id="discount-products">
+         
+        </div>
+      </div>
+      <div class="section" id="popular-products">
+        <h2>Популярные товары</h2>
+        <div class="product-grid" id="popular-products-grid">
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Apple Store. Все права защищены.</p>
+      <div class="social-links" aria-label="Социальные сети">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
